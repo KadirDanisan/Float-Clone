@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon--light.png">
+    <title>Float</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap İcon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Foot-awesoom İcon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Heading -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="index.html"
+            ><img
+              alt="float-logo"
+              loading="lazy"
+              width="100"
+              height="20"
+              decoding="async"
+              data-nimg="1"
+              src="img/wordmark--dark.svg"
+              style="color: transparent"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#exampleModal">
+                  <button
+                    class="btn btn-login"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Login
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog container">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modal-title fs-5 text-center" id="exampleModalLabel">
+              <img
+                alt="float-logo"
+                loading="lazy"
+                width="100"
+                height="20"
+                decoding="async"
+                data-nimg="1"
+                src="img/wordmark--dark.svg"
+                style="color: transparent"
+              />
+            </span>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body border-0 p-4">
+            <form
+              id="contactForm"
+              action="https://formsubmit.co/kadirdaniisan@gmail.com"
+              method="post"
+            >
+              <!--First Name input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="f-name"
+                  name="f-name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  required=""
+                />
+                <label for="f-name">First name</label>
+                <div class="invalid-feedback">A name is required.</div>
+              </div>
+              <!--Last Name input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="l-name"
+                  name="l-name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  required=""
+                />
+                <label for="l-name">Last name</label>
+                <div class="invalid-feedback">A name is required.</div>
+              </div>
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  type="email"
+                  required=""
+                  placeholder="name@example.com"
+                />
+                <label for="email">Email address</label>
+                <div class="invalid-feedback">An email is required.</div>
+                <div class="invalid-feedback">Email is not valid.</div>
+              </div>
+              <!-- Password -->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="Password"
+                  name="Password"
+                  type="password"
+                  placeholder="Enter your password..."
+                  required=""
+                />
+                <label for="password">Password</label>
+                <div class="invalid-feedback">A password is required.</div>
+              </div>
+              <!-- Submit Button-->
+              <div class="d-grid mb-3 mt-3">
+                <button
+                  class="btn-login-submit btn btn-primary rounded-pill btn-lg"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Continue Application
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Picture -->
+    <section class="cta" id="mainNav">
+      <div class="cta-content">
+        <div class="container">
+          <img src="img/header-bg.webp" class="img-fluid" alt="..." />
+        </div>
+      </div>
+    </section>
+    <!-- Service -->
+    <section class="offer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold">
+              The smartest way to pay your<br />
+              <span class="glb">global vendors and suppliers</span>
+            </h1>
+            <br />
+            <button class="btn btn-make btn-primary">Make a payment</button>
+          </div>
+          <div class="col-lg-4 row">
+            <span class="fa-arrow">
+              <i class="fa-solid fa-arrow-right fa-2xl"></i>
+              <i class="fa-solid fa-arrow-right fa-2xl"></i>
+            </span>
+            <p>
+              Enjoy the easiest and most flexible way to pay domestic and
+              international vendors, by card, ACH, Wire, SWIFT and local
+              payments.
+            </p>
+            <div class="row mt-5">
+              <span class="fa-lg">
+                <a href="#"><i class="fa-brands fa-apple fa-xl ms-3"></i></a>
+                <a href="#"
+                  ><i class="fa-brands fa-google-play fa-xl ms-3 me-3"></i
+                ></a>
+                <p>Coming Soon</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="section-heading text-uppercase">Our Privileges</h1>
+          <h3 class="section-subheading text-muted">
+            Let's look at the items below for details.
+          </h3>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="img/360_F_240327047_Tqd03M1Qf9zdWT9kxjJDPerhfDRpVvCp.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Faster Payments</h4>
+                <h4 class="subheading">
+                  Manage your global payments in one place
+                </h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Make instant and compliant payments to 130+ countries in 30
+                  currencies. Leverage real-time transaction monitoring powered
+                  by Float’s vast network of payment partners.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="img/ds.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Boost Cashflow</h4>
+                <h4 class="subheading">
+                  Manage your global payments in one place
+                </h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Improve your cashflow with flexible payment terms for your
+                  global business purchases and expense payments.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="img/dijital-finans-muhendisi-egitim-ve-sertifika-programi-kapak.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Automate Invoicing</h4>
+                <h4 class="subheading">
+                  Manage your global payments in one place
+                </h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Create smart payment links and invoices to seamlessly get paid
+                  from over 60 geographies in 30+ currencies.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="img/Dijital-Finans-960x640.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Manage Collections</h4>
+                <h4 class="subheading">
+                  Manage your global payments in one place
+                </h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Get your revenue from global sales directly deposited to your
+                  bank account or wallet with zero fees.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Portfolio -->
+    <section class="pircing">
+      <div class="container px-5 px-lg-5">
+        <div class="content-heading text-center">
+          <h3 class="text-secondary mb-0">Contents</h3>
+          <h2 class="mb-5">Let's look at the contents below for details.</h2>
+        </div>
+        <div class="row gx-0">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Faster Payments</div>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/automate.webp" alt="..." />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Automate Invoicing</div>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/faster.webp" alt="..." />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Boost Cashflow</div>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/boost.webp" alt="..." />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Manage Collections</div>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/manage.webp" alt="..." />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Card -->
+    <section class="card">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-xl-4">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="small text-uppercase fw-bold">FREE</div>
+                <div class="mb-3">
+                  <span class="display-4 fw-bold">9</span>
+                  <span class="text-muted">/ mo.</span>
+                </div>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    <strong>5 users</strong>
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    5GB storage
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Unlimited public projects
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Community access
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Unlimited private projects
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Dedicated support
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Free linked domain
+                  </li>
+                  <li class="text-muted">
+                    <i class="bi bi-x"></i>
+                    Monthly status reports
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="small text-uppercase fw-bold">FREE</div>
+                <div class="mb-3">
+                  <span class="display-4 fw-bold">9</span>
+                  <span class="text-muted">/ mo.</span>
+                </div>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    <strong>5 users</strong>
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    5GB storage
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Unlimited public projects
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Community access
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Unlimited private projects
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Dedicated support
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Free linked domain
+                  </li>
+                  <li class="text-muted">
+                    <i class="bi bi-x"></i>
+                    Monthly status reports
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-4">
+            <div class="card-content">
+              <div class="card-body">
+                <div class="small text-uppercase fw-bold">FREE</div>
+                <div class="mb-3">
+                  <span class="display-4 fw-bold">9</span>
+                  <span class="text-muted">/ mo.</span>
+                </div>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    <strong>5 users</strong>
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    5GB storage
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Unlimited public projects
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Community access
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Unlimited private projects
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Dedicated support
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check text-black"></i>
+                    Free linked domain
+                  </li>
+                  <li class="text-muted">
+                    <i class="bi bi-x"></i>
+                    Monthly status reports
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Touch -->
+    <section class="touch-section">
+      <div class="container">
+        <div class="row">
+          <span></span>
+          <div class="text col-md-6 col-sm-6 col-8 m-5 p-5">
+            <h1 class="text-white pt-5">
+              Go global<br />
+              on mobile.
+            </h1>
+            <p class="mt-3">Manage your payments on the go. Coming soon!</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <a href="#" class="app-store-x">
+                  <img src="img/app-store.svg" alt="..." />
+                </a>
+                <a href="#" class="google-store">
+                  <img src="img/download.svg" alt="..." />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Kadir Danışan -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <p class="mt-5">
+              About us &nbsp;&nbsp; Terms of service&nbsp;&nbsp; Privacy
+              policy&nbsp;&nbsp; Support policy&nbsp;&nbsp; Evolve’s privacy
+              policy
+            </p>
+            <br />
+            <hr />
+            <br />
+            <img
+              src="img/wordmark--dark.svg"
+              alt="..."
+              width="100"
+              height="20"
+            />
+            <br />
+            <br />
+            <hr />
+            <br />
+            <small
+              >Float is a financial technology company, not a bank. Bank
+              accounts and banking services are provided by Float’s partner
+              banks, members FDIC. Float’s USD operating<br />accounts are
+              provided by Evolve Bank & Trust. Multi-currency accounts are
+              provided by Routefusion. <br />Investment accounts are managed by
+              Atomic Invest an SEC-registered investment advisor and held by
+              Pershing Advisor Solutions LLC, a business of BNY Mellon, N.A.<br />
+              Pershing LLC.
+            </small>
+            <br />
+            <br />
+            <br />
+            <p>Kadir Danışan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap Html -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

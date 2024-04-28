@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon--light.png">
+    <title>Float</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap İcon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Heading -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="index.html"
+            ><img
+              alt="float-logo"
+              loading="lazy"
+              width="100"
+              height="20"
+              decoding="async"
+              data-nimg="1"
+              src="img/wordmark--dark.svg"
+              style="color: transparent"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#exampleModal">
+                  <button
+                    class="btn btn-login"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Login
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+     <!-- Modal -->
+     <div
+     class="modal fade"
+     id="exampleModal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog container">
+       <div class="modal-content">
+         <div class="modal-header">
+           <span class="modal-title fs-5 text-center" id="exampleModalLabel">
+             <img
+               alt="float-logo"
+               loading="lazy"
+               width="100"
+               height="20"
+               decoding="async"
+               data-nimg="1"
+               src="img/wordmark--dark.svg"
+               style="color: transparent"
+             />
+           </span>
+           <button
+             type="button"
+             class="btn-close"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+           ></button>
+         </div>
+         <div class="modal-body border-0 p-4">
+           <form
+             id="contactForm"
+             action="https://formsubmit.co/kadirdaniisan@gmail.com"
+             method="post"
+           >
+             <!--First Name input-->
+             <div class="form-floating mb-3">
+               <input
+                 class="form-control"
+                 id="f-name"
+                 name="f-name"
+                 type="text"
+                 placeholder="Enter your name..."
+                 required=""
+               />
+               <label for="f-name">First name</label>
+               <div class="invalid-feedback">A name is required.</div>
+             </div>
+             <!--Last Name input-->
+             <div class="form-floating mb-3">
+               <input
+                 class="form-control"
+                 id="l-name"
+                 name="l-name"
+                 type="text"
+                 placeholder="Enter your name..."
+                 required=""
+               />
+               <label for="l-name">Last name</label>
+               <div class="invalid-feedback">A name is required.</div>
+             </div>
+             <!-- Email address input-->
+             <div class="form-floating mb-3">
+               <input
+                 class="form-control"
+                 id="email"
+                 name="email"
+                 type="email"
+                 required=""
+                 placeholder="name@example.com"
+               />
+               <label for="email">Email address</label>
+               <div class="invalid-feedback">An email is required.</div>
+               <div class="invalid-feedback">Email is not valid.</div>
+             </div>
+             <!-- Password -->
+             <div class="form-floating mb-3">
+               <input
+                 class="form-control"
+                 id="Password"
+                 name="Password"
+                 type="password"
+                 placeholder="Enter your password..."
+                 required=""
+               />
+               <label for="password">Password</label>
+               <div class="invalid-feedback">A password is required.</div>
+             </div>
+             <!-- Submit Button-->
+             <div class="d-grid mb-3 mt-3">
+               <button
+                 class="btn-login-submit btn btn-primary rounded-pill btn-lg"
+                 id="submitButton"
+                 type="submit"
+               >
+                 Continue Application
+               </button>
+             </div>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+    <!-- building -->
+    <section class="building">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="display-5">
+              We’re building the next-generation global banking platform for
+              businesses.
+            </h1>
+            <p>
+              Float was founded in 2020 by a group of passionate technology
+              experts who were tired of the outdated, slow, and inefficient
+              traditional banking systems. We set out to create a platform that
+              would transform the way businesses manage their finances, pay
+              their suppliers, and access liquidity to smoothen cashflow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Picture -->
+    <section class="abt" id="aboutNav">
+      <div class="cta-content">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5">
+            <div class="col-lg-6"></div>
+            <div class="col-lg-6">
+              <h1 class="mt-5">Our Mission</h1>
+              <h5 class="mt-5">
+                Our mission is to accelerate global B2B commerce with<br />
+                modern banking, payments, and liquidity solutions they<br />
+                need to thrive in an increasingly interconnected and<br />
+                competitive business landscape.
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Post -->
+    <section class="post">
+      <div class="container">
+        <div class="investors">
+          <h1>Our Investors</h1>
+          <h5 class="text-muted">
+            We’re backed by the best financial technology investors
+          </h5>
+        </div>
+        <br />
+        <br />
+        <hr />
+        <div class="financial-technology">
+          <br />
+          <div class="row align-items-center">
+            <div class="col-6"><p class="financial">Ycombinator</p></div>
+            <div class="col-6 text-end">
+              <img
+                src="img/ycombinator.png"
+                class="img-fluid"
+                alt="..."
+                width="100"
+              />
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="row align-items-center">
+            <div class="col-6"><p class="financial">Tiger Global </p></div>
+            <div class="col-6 text-end">
+              <img
+                src="img/tiger.png"
+                class="img-fluid"
+                alt="..."
+                width="100"
+              />
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="row align-items-center">
+            <div class="col-6"><p class="financial">Jam Fund</p></div>
+            <div class="col-6 text-end">
+              <img
+                src="img/jam.png"
+                class="img-fluid"
+                alt="..."
+                width="100"
+              />
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="row align-items-center">
+            <div class="col-6"><p class="financial">Horizon VC</p></div>
+            <div class="col-6 text-end">
+              <img
+                src="img/horizon.png"
+                class="img-fluid"
+                alt="..."
+                width="100"
+              />
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="row align-items-center">
+            <div class="col-6"><p class="financial">SOMA Capital</p></div>
+            <div class="col-6 text-end">
+              <img
+                src="img/soma.png"
+                class="img-fluid"
+                alt="..."
+                width="100"
+              />
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="row align-items-center">
+            <div class="col-6"><p class="financial">Ramp</p></div>
+            <div class="col-6 text-end">
+              <img
+                src="img/ramp.png"
+                class="img-fluid"
+                alt="..."
+                width="100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Touch -->
+    <section class="touch-section">
+      <div class="container">
+        <div class="row">
+          <span></span>
+          <div class="text col-md-6 col-sm-6 col-8 m-5 p-5">
+            <h1 class="text-white pt-5">
+              Go global<br />
+              on mobile.
+            </h1>
+            <p class="mt-3">Manage your payments on the go. Coming soon!</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <a href="#" class="app-store-x">
+                  <img src="img/app-store.svg" alt="..." />
+                </a>
+                <a href="#" class="google-store">
+                  <img src="img/download.svg" alt="..." />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Kadir Danışan -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <p class="mt-5">
+              About us &nbsp;&nbsp; Terms of service&nbsp;&nbsp; Privacy
+              policy&nbsp;&nbsp; Support policy&nbsp;&nbsp; Evolve’s privacy
+              policy
+            </p>
+            <br />
+            <hr />
+            <br />
+            <img
+              src="img/wordmark--dark.svg"
+              alt="..."
+              width="100"
+              height="20"
+            />
+            <br />
+            <br />
+            <hr />
+            <br />
+            <small
+              >Float is a financial technology company, not a bank. Bank
+              accounts and banking services are provided by Float’s partner
+              banks, members FDIC. Float’s USD operating<br />accounts are
+              provided by Evolve Bank & Trust. Multi-currency accounts are
+              provided by Routefusion. <br />Investment accounts are managed by
+              Atomic Invest an SEC-registered investment advisor and held by
+              Pershing Advisor Solutions LLC, a business of BNY Mellon, N.A.<br />
+              Pershing LLC.
+            </small>
+            <br />
+            <br />
+            <br />
+            <p>Kadir Danışan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap Html -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

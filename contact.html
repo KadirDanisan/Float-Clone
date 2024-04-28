@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+    <link rel="shortcut icon" href="img/favicon--light.png">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap İcon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Heading -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="index.html"
+            ><img
+              alt="float-logo"
+              loading="lazy"
+              width="100"
+              height="20"
+              decoding="async"
+              data-nimg="1"
+              src="img/wordmark--dark.svg"
+              style="color: transparent"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#exampleModal">
+                  <button
+                    class="btn btn-login"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Login
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+     <!-- Modal -->
+     <div
+     class="modal fade"
+     id="exampleModal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog container">
+       <div class="modal-content">
+         <div class="modal-header">
+           <span class="modal-title fs-5 text-center" id="exampleModalLabel">
+             <img
+               alt="float-logo"
+               loading="lazy"
+               width="100"
+               height="20"
+               decoding="async"
+               data-nimg="1"
+               src="img/wordmark--dark.svg"
+               style="color: transparent"
+             />
+           </span>
+           <button
+             type="button"
+             class="btn-close"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+           ></button>
+         </div>
+         <div class="modal-body border-0 p-4">
+           <form
+             id="contactForm"
+             action="https://formsubmit.co/kadirdaniisan@gmail.com"
+             method="post"
+           >
+             <!--First Name input-->
+             <div class="form-floating mb-3">
+               <input
+                 class="form-control"
+                 id="f-name"
+                 name="f-name"
+                 type="text"
+                 placeholder="Enter your name..."
+                 required=""
+               />
+               <label for="f-name">First name</label>
+               <div class="invalid-feedback">A name is required.</div>
+             </div>
+             <!--Last Name input-->
+             <div class="form-floating mb-3">
+               <input
+                 class="form-control"
+                 id="l-name"
+                 name="l-name"
+                 type="text"
+                 placeholder="Enter your name..."
+                 required=""
+               />
+               <label for="l-name">Last name</label>
+               <div class="invalid-feedback">A name is required.</div>
+             </div>
+             <!-- Email address input-->
+             <div class="form-floating mb-3">
+               <input
+                 class="form-control"
+                 id="email"
+                 name="email"
+                 type="email"
+                 required=""
+                 placeholder="name@example.com"
+               />
+               <label for="email">Email address</label>
+               <div class="invalid-feedback">An email is required.</div>
+               <div class="invalid-feedback">Email is not valid.</div>
+             </div>
+             <!-- Password -->
+             <div class="form-floating mb-3">
+               <input
+                 class="form-control"
+                 id="Password"
+                 name="Password"
+                 type="password"
+                 placeholder="Enter your password..."
+                 required=""
+               />
+               <label for="password">Password</label>
+               <div class="invalid-feedback">A password is required.</div>
+             </div>
+             <!-- Submit Button-->
+             <div class="d-grid mb-3 mt-3">
+               <button
+                 class="btn-login-submit btn btn-primary rounded-pill btn-lg"
+                 id="submitButton"
+                 type="submit"
+               >
+                 Continue Application
+               </button>
+             </div>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+    <!-- Picture -->
+    <section class="cta" id="mainNav">
+      <div class="cta-content">
+        <div class="container">
+          <img src="img/dashboard.webp" class="img-fluid" alt="..." />
+        </div>
+      </div>
+    </section>
+    <!-- Form -->
+    <section class="form">
+      <div class="container">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="text-center m-5">
+            <h1>
+              Manage your global payments<br />
+              <span class="green-text">in one place</span> 
+            </h1>
+            <h5>
+              Manage all your purchasing, bill, and payment data with our
+              powerful vendor and supplier management suite.
+            </h5>
+          </div>
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Name"
+                  id="name"
+                  required=""
+                  data-validation-required-message="Please enter your name."
+                />
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                  id="email"
+                  required=""
+                  data-validation-required-message="Please enter your email address."
+                  aria-invalid="false"
+                />
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div
+                class="form-group col-xs-12 floating-label-form-group controls"
+              >
+                <label>Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Phone Number"
+                  id="phone"
+                  required=""
+                  data-validation-required-message="Please enter your phone number."
+                />
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>Message</label>
+                <textarea
+                  rows="5"
+                  class="form-control"
+                  placeholder="Message"
+                  id="message"
+                  required=""
+                  data-validation-required-message="Please enter a message."
+                  aria-invalid="false"
+                ></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div id="success"></div>
+            <div class="form-group text-center">
+              <button
+                type="submit"
+                class="btn btn-submit btn-primary btn-xl text-uppercase Disabled"
+                id="sendMessageButton"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Map -->
+    <div class="map" id="contact">
+      <iframe
+        src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"
+      ></iframe>
+      <br />
+      <small
+        ><a
+          href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"
+        ></a
+      ></small>
+    </div>
+    <!-- Footer Kadir Danışan -->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <p class="mt-5">
+              About us &nbsp;&nbsp; Terms of service&nbsp;&nbsp; Privacy
+              policy&nbsp;&nbsp; Support policy&nbsp;&nbsp; Evolve’s privacy
+              policy
+            </p>
+            <br />
+            <hr />
+            <br />
+            <img
+              src="img/wordmark--dark.svg"
+              alt="..."
+              width="100"
+              height="20"
+            />
+            <br />
+            <br />
+            <hr />
+            <br />
+            <small
+              >Float is a financial technology company, not a bank. Bank
+              accounts and banking services are provided by Float’s partner
+              banks, members FDIC. Float’s USD operating<br />accounts are
+              provided by Evolve Bank & Trust. Multi-currency accounts are
+              provided by Routefusion. <br />Investment accounts are managed by
+              Atomic Invest an SEC-registered investment advisor and held by
+              Pershing Advisor Solutions LLC, a business of BNY Mellon, N.A.<br />
+              Pershing LLC.
+            </small>
+            <br />
+            <br />
+            <br />
+            <p>Kadir Danışan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap Html -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
